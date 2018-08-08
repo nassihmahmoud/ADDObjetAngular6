@@ -21,4 +21,7 @@ export class BoucleComponent {
                       const index = this.listCours.indexOf(cour);
                       this.listCours.splice(index, 1);
                     }
+                    updateCour(cour) {
+                      cour.title = 'mahmoud';
+                    }
 }
