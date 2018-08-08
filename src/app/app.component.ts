@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'exercice1';
+        //   post = {
+        //       title : 'exercice1',
+        //       isClicked : true
+        //  };
+        //  mychangeClick(args) {
+        //        console.log('Is Clicked', args);
+        //  }
+        tab = ['Larvel', 'Angular', 'Symphony'];
+
 }

@@ -1,0 +1,7 @@
+<div *ngIf="tab.length > 0; then cours else nocours"></div>
+<ng-template #cours>
+  liste mes cours
+</ng-template>
+<ng-template #nocours>
+  Pas des cours
+</ng-template>

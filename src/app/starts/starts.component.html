@@ -1,0 +1,12 @@
+<i
+
+class="fa fa-3x"
+ (click)="onClickSurButton()"
+ [class.fa-star] ="!isSelected"
+ [class.fa-star-half-o] ="isSelected"
+>
+</i>
+
+<div class="container">
+     <button (click)="onClickSurButton()">{{isSelected}}</button>
+</div>

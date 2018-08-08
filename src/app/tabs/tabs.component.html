@@ -1,0 +1,13 @@
+<ul class="nav nav-pills">
+  <li class="nav-item"><a class="nav-link" [class.active]="nomCour == 'laravel'" (click)="nomCour= 'laravel' ">laravel</a></li>
+  <li class="nav-item"><a class="nav-link" [class.active]="nomCour == 'angular'" (click)="nomCour= 'angular' ">Angular</a></li>
+  <li class="nav-item"><a class="nav-link" [class.active]="nomCour == 'symfony'" (click)="nomCour= 'symfony' ">Symfony</a></li>
+</ul>
+
+  <div [ngSwitch]='nomCour'>
+         <div *ngSwitchCase="'laravel'">lorem Laraval</div>
+         <div *ngSwitchCase="'angular'">lorem Angular</div>
+         <div *ngSwitchCase="'symfony'">lorem Symfony</div>
+         <div *ngSwitchDefault>Autre chose</div>
+  </div>
+
