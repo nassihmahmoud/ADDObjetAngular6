@@ -17,4 +17,8 @@ export class BoucleComponent {
                            this.listCours.push({id: this.listCours.length + 1, title: cour});
                            this.nomCours = '';
                     }
+                    deleteCour(cour) {
+                      const index = this.listCours.indexOf(cour);
+                      this.listCours.splice(index, 1);
+                    }
 }

@@ -1,11 +1,13 @@
 <form>
   <input type="text"  [(ngModel)]= "nomCours" name="nomCours"  required/>
-  <button class="button uk-button-success" (click)="addCour(nomCours)" >Ajouter</button>
+  <button class="btn btn-success" (click)="addCour(nomCours)" >Ajouter</button>
+
 </form>
 
 
 <ul>
   <li *ngFor="let cour of listCours">
    {{cour.id}} : {{cour.title}}
+   <button class="btn btn-danger" (click)="deleteCour(cour)" >Sup</button>
   </li>
 </ul>
